@@ -176,7 +176,8 @@ background: rgb(254, 163, 1);
 /* Story-Banner section */
 #story-banner{
     background: url("./assets/bg.png"),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
-    padding: 0px 150px;
+    padding: 0px 150px 60px 150px;
+    
 }
 .grid-card{
     display: grid;
@@ -234,4 +235,52 @@ border-radius: 16px;
 #story-banner>h1{
     text-align: center;
     margin: 60px 0;
+}
+.view{
+    position: relative;
+    left: 45%;
+    margin: 50px 0;
+    background-color: black;
+    color: white;
+}
+
+/* Footer seciton */
+
+.footer{
+     background: rgb(1, 172, 253);
+     padding: 123px 150px 174px 150px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-para{
+    width: 400px;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.footer-kids{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-kids>h2{
+    color: white;
+    margin: 30px 0;
+}
+.footer-school>h2{
+    color: white;
+}
+.footer-school ul>li{
+    list-style: none;
+    padding: 10px 0;
+    color: white;
+    margin-top: 10px;
 }
