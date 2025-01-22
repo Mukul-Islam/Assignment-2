@@ -34,11 +34,11 @@
     margin: 20px 0;
 }
 /* nav-bar */
-#nav-bar{
+.nav-bar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 150px;
+    margin: 20px 150px 0 150px;
 }
 .nav-icon{
     display: flex;
@@ -51,7 +51,7 @@
     width: 60px;
 }
 
-#nav-bar ul{
+.nav-bar ul{
     display: flex;
     list-style: none;
     width: 400px;
@@ -72,9 +72,61 @@ ul> .admission{
     color: rgb(93, 88, 239);
 }
 
+/* Navbar Responsive */
+@media screen and (max-width: 576px) {
+   /* *{
+    margin: 0;
+    padding: 0;
+   } */
+    #banner{
+        padding: 0;
+    }
+    .nav-bar{
+        display: none;
+    }
+    .containe img{
+        width: fit-content;
+        
+    }
+    .container .title{
+       /* position: relative; */
+       /* left: 20%; */
+       font-size: 2rem;  
+       text-align: center;
+    }
+    .container .btn{
+        position: relative;
+        left: 40%;
+
+    }
+    .container .banner-para {
+        font-size: 1rem;
+        /* width: 100%; */
+        text-align: center;
+
+    }
+    
+    .banner-container{
+         flex-direction: column-reverse;
+ }
+    .card{
+        flex-direction: column;
+    }
+    #story-banner{
+        flex-direction: column;
+    }
+    .grid-card{
+       flex-direction: column;
+    }
+
+    .footer-container{
+        flex-direction: column;
+    }
+}
+
 /* banner secion */
 #banner{
-    margin: 0 150px;
+    padding: 0 150px;
 }
 #banner .banner-container{
     display: flex;
@@ -85,7 +137,7 @@ ul> .admission{
 }
 .container{
     
-    width: 740px;
+    width: 46.26rem;
    
 }
 .title1{
@@ -113,7 +165,7 @@ ul> .admission{
 }
 
 .standard-title{
-    margin: 60px 0;
+    margin: 80px 0;
     font-size: 46px;
 }
 #card-item .title{
@@ -190,7 +242,7 @@ background: rgb(254, 163, 1);
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 60px;
-   
+   /* display: none; */
 }
 .story-title{
     font-size: 46px;
@@ -289,11 +341,12 @@ border-radius: 16px;
 .footer{
      background: rgb(1, 172, 253);
      padding: 123px 300px 174px 150px;
+     
 }
 .footer-container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 .footer-para{
     width: 400px;
@@ -302,18 +355,28 @@ border-radius: 16px;
     font-size: 20px;
     font-weight: 400;
     line-height: 25px;
+    margin-top: 30px;
     letter-spacing: 0%;
     text-align: left;
 }
+
 .footer-kids{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+   
 }
 
 .footer-kids>h2{
     color: white;
-    margin: 30px 0;
+    /* margin-bottom: 30px; */
+    color: rgb(255, 255, 255);
+    font-size: 42.14px;
+    font-weight: 700;
+    line-height: 39.51px;
+    letter-spacing: 0%;
+    text-align: left;
+    font-family: Quicksand;
 }
 .footer-school>h2{
     color: white;
@@ -326,5 +389,6 @@ border-radius: 16px;
 }
 .footer-keep{
     color: white;
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
+
