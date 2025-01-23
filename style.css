@@ -182,10 +182,8 @@ border: 0.5px solid rgb(254, 163, 1);
         margin-top:10px ;
     }
     .div-button{
-        display: flex;
-        gap: 10%;
-        right: 20%;
-    }
+        display: none;
+      }
 }
 
 /* banner secion */
