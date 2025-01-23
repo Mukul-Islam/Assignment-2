@@ -78,9 +78,7 @@ ul> .admission{
     margin: 0;
     padding: 0;
    } */
-    #banner{
-        padding: 0;
-    }
+    
     .nav-bar{
         display: none;
     }
@@ -115,29 +113,39 @@ ul> .admission{
     #story-banner{
         flex-direction: column;
     }
-    .grid-card{
-       flex-direction: column;
+    .grid-image{
+      grid-template-columns: repeat(2,1fr);
+      padding: 15px;
+       
     }
+    body, html {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    .card-story{
+        display: none;
+    }
+
 
     .footer-container{
         flex-direction: column;
+        
     }
 }
 
 /* banner secion */
 #banner{
-    padding: 0 150px;
+    max-width: 1200px;
+    /* padding: 20px; */
+    margin: 0 auto;
 }
 #banner .banner-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-   
-}
-.container{
-    
-    width: 46.26rem;
    
 }
 .title1{
@@ -156,6 +164,9 @@ ul> .admission{
     color: rgb(17, 17, 17);
     padding: 13px 0;
 }
+
+
+
 /* Card Item */
 #card-item{
     background-image: url("./assets/bg.png");
@@ -235,14 +246,17 @@ background: rgb(254, 163, 1);
 /* Story-Banner section */
 #story-banner{
     background: url("./assets/bg.png"),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
-    padding: 0px 150px 60px 150px;
-    
+    /* padding: 0px 150px 60px 150px; */
+   
 }
+
 .grid-card{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    /* grid-template-columns: repeat(2,1fr); */
+    max-width: 1200px;
     gap: 60px;
-   /* display: none; */
+    padding: 20px;
+    margin: 0 auto;
 }
 .story-title{
     font-size: 46px;
@@ -340,13 +354,16 @@ border-radius: 16px;
 
 .footer{
      background: rgb(1, 172, 253);
-     padding: 123px 300px 174px 150px;
+     
      
 }
 .footer-container{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 .footer-para{
     width: 400px;
@@ -392,3 +409,9 @@ border-radius: 16px;
     margin-bottom: 20px;
 }
 
+@media screen and(max-width:576px) {
+    .footer-kids{
+        /* padding: 20px 0; */
+    }
+    
+}
