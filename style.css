@@ -2,6 +2,7 @@
     font-family: Quicksand;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     
 }
 .open-sans-normal {
@@ -38,7 +39,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 150px 0 150px;
+    max-width: 1400px;
+    margin: 20px auto 0 auto;
 }
 .nav-icon{
     display: flex;
@@ -59,6 +61,9 @@
     font-weight: 700;
     font-size: 20px;
 }
+.menu{
+    display:none;
+}
 ul> .home{
     color: rgb(254, 163, 1);
 }
@@ -78,8 +83,25 @@ ul> .admission{
     margin: 0;
     padding: 0;
    } */
-    
+    .button-hidden{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .menu2{
+        box-sizing: border-box;
+/* Orange */
+border: 0.5px solid rgb(254, 163, 1);
+    }
     .nav-bar{
+        /* display: none; */
+        overflow-x: hidden;
+    }
+    .nav-bar ul{
+        display: none;
+    }
+    .nav-icon>.title{
         display: none;
     }
     .containe img{
@@ -94,7 +116,7 @@ ul> .admission{
     }
     .container .btn{
         position: relative;
-        left: 40%;
+        left: 20%;
 
     }
     .container .banner-para {
@@ -115,8 +137,17 @@ ul> .admission{
     }
     .grid-image{
       grid-template-columns: repeat(2,1fr);
-      padding: 15px;
+      /* padding: 15px; */
        
+    }
+    .grid-image>div{
+        max-width: 200px;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .grid-image>div>img{
+        max-width: 200px;
     }
     body, html {
         margin: 0;
@@ -133,13 +164,39 @@ ul> .admission{
         flex-direction: column;
         
     }
+    .banner-container .container{
+        /* max-width: 357px; */
+        max-width: 100%;
+        /* margin: 0 auto; */
+    }
+    .containe img{
+        max-width: 100%;
+        /* margin: 0 auto; */
+    }
+    .standard-title{
+        
+       position: static;
+       right: 100%;
+    }
+    .card-banner{
+        margin-top:10px ;
+    }
+    .div-button{
+        display: flex;
+        gap: 10%;
+        right: 20%;
+    }
 }
 
 /* banner secion */
 #banner{
-    max-width: 1200px;
+    max-width: 1400px;
     /* padding: 20px; */
     margin: 0 auto;
+}
+
+#banner .banner-para{
+    width: 550px;
 }
 #banner .banner-container{
     display: flex;
@@ -148,6 +205,7 @@ ul> .admission{
     margin-top: 20px;
    
 }
+
 .title1{
     font-size: 56px;
 
@@ -170,7 +228,9 @@ ul> .admission{
 /* Card Item */
 #card-item{
     background-image: url("./assets/bg.png");
-    padding: 0 150px;
+    /* /* padding: 0 150px; */
+    max-width: 1400px;
+    margin: 0 auto; 
     /* margin-bottom: 100px; */
     padding-bottom: 50px;
 }
@@ -253,9 +313,9 @@ background: rgb(254, 163, 1);
 .grid-card{
     display: flex;
     /* grid-template-columns: repeat(2,1fr); */
-    max-width: 1200px;
-    gap: 60px;
-    padding: 20px;
+    max-width: 1400px;
+   justify-content: space-between;
+    /* padding: 20px; */
     margin: 0 auto;
 }
 .story-title{
@@ -298,7 +358,7 @@ background: rgb(254, 163, 1);
     width: 540.27px;
     border-radius: 16px;
     background: rgb(255, 255, 255);
-    border-radius: 16px;
+    
 }
 .card-story img{
     border-radius: 16px 16px 0 0;
@@ -328,7 +388,8 @@ background: rgb(254, 163, 1);
 }
 .grid-image>div{
     background-color: white;
-    margin: 10px 60px 10px 0;
+    /* margin: 10px 60px 10px 0; */
+    margin: 0 10px;
     width: 290.69px;
 height: 301.61px;
 border-radius: 16px;
@@ -361,7 +422,7 @@ border-radius: 16px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -408,10 +469,24 @@ border-radius: 16px;
     color: white;
     margin-bottom: 20px;
 }
+.hover:hover{
+    background-color: black;
+}
 
 @media screen and(max-width:576px) {
-    .footer-kids{
-        /* padding: 20px 0; */
+    .footer-school>h2{
+       margin:20px 0;
+    }
+    .grid-image>div{
+        background-color: white;
+        /* margin: 10px 60px 10px 0; */
+        margin: 20px 10px;
+        width: 290.69px;
+    height: 201.61px;
+    border-radius: 16px;
+    }
+    .hover:hover{
+       background-color: black;
     }
     
 }
