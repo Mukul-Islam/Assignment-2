@@ -39,7 +39,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 20px auto 0 auto;
 }
 .nav-icon{
@@ -190,7 +190,7 @@ border: 0.5px solid rgb(254, 163, 1);
 
 /* banner secion */
 #banner{
-    max-width: 1400px;
+    max-width: 1200px;
     /* padding: 20px; */
     margin: 0 auto;
 }
@@ -229,7 +229,7 @@ border: 0.5px solid rgb(254, 163, 1);
 #card-item{
     background-image: url("./assets/bg.png");
     /* /* padding: 0 150px; */
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto; 
     /* margin-bottom: 100px; */
     padding-bottom: 50px;
@@ -313,7 +313,7 @@ background: rgb(254, 163, 1);
 .grid-card{
     display: flex;
     /* grid-template-columns: repeat(2,1fr); */
-    max-width: 1400px;
+    max-width: 1200px;
    justify-content: space-between;
     /* padding: 20px; */
     margin: 0 auto;
@@ -422,7 +422,7 @@ border-radius: 16px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
